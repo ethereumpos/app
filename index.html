@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ethereum Point of Sale</title>
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <div class="leftside">
+
+
+<span class="headerbar">Orders</span>
+<button class="btn btn-success" href="#">New Order</button><br>
+<button class="btn btn-success" href="#">Find Order</button>
+
+<span class="headerbar">Blockchain Stats</span>
+    <span id="atlysbalance">Current Block: 32939403</span>
+    <span id="atlysbalance">ETH/USD $92.43</span>
+    <span id="atlysbalance">BTC/USD $1640.30</span>
+    <span class="atlyswallet">0x9829do2sljndno2786ch2ojg9873cxijfhduo2hu2</span>
+
+    <span class="poweredby">EthereumPOS.com</span>
+    <span class="versionnumber">v0.0.01</span>
+
+    </div>
+
+
+    <div class="rightside">
+
+<iframe width="100%" height="100%" src="https://ethereumpos.com/test_payment/716101421" frameBorder="0"></iframe>
+
+    </div>
+
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+
+  <script src="./ethereumpos.js"></script>
+
+</html>
